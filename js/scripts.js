@@ -3,16 +3,6 @@ $(document).ready(function() {
   $("form#new-contact-form").submit(function(event) {
     event.preventDefault();
 
-    // var msg = "Task: + " + $("#task").val();
-
-    // if ($("#urgent-checkbox").is(":checked")) {
-    //   msg = msg + " is urgent";
-    // } else {
-    //   msg = msg + " is not urgent";
-    // }
-
-    // alert(msg);
-
     var taskDescription = $("#task").val();
     var taskUrgent = $("#urgent-checkbox").is(":checked");
 
@@ -28,7 +18,9 @@ $(document).ready(function() {
     }
 
     $("#task-list li").last().click(function() {
-      $(this).remove();
+      if (confirm("Mark this task as complete?")) {
+        $(this).remove();
+      }
     });
 
     $("#task").val("");
