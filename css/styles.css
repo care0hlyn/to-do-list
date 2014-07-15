@@ -1,3 +1,26 @@
 #task {
   width: 80%;
 }
+
+
+#task-list li {
+  list-style-type: none;
+  cursor: pointer;
+  color: #0033cc;
+}
+
+#task-list li:hover {
+  text-decoration: underline;
+}
+
+.urgentClass {
+  background-color: #ffff00;
+  font-weight: bold;
+}
+
+
+
+#done {
+  border: none;
+}
+

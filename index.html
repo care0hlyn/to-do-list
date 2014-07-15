@@ -19,7 +19,11 @@
               <input type="text" class="form-control" id="task" placeholder="Enter task">
             </div>
 
-    <!--        <div class="checkbox">
+            <div class="form-group">
+              <label class="checkbox-inline">Urgent?</label>
+              <input type="checkbox" id="urgent-checkbox" value="urgent">
+            </div>
+      <!--        <div class="checkbox">
               <input type="checkbox"> Check when Completed
             </div> -->
 
@@ -31,6 +35,9 @@
 
       <div class="col-md-4">
         <h2>Tasks:</h2>
+        <p class="intro">Click task to mark as complete</p>
+        <ul id="task-list">
+        </ul>
       </div>
 
     </div> <!-- row -->
